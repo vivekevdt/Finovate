@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "email": "email dev",
-    "postinstall": "prisma generate"
+    "postinstall": "prisma generate",
+    "render-build": "npx prisma migrate deploy && next build"
+
   },
   "dependencies": {
     "@arcjet/next": "^1.0.0-alpha.34",
